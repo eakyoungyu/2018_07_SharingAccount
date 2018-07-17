@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp">
+
+    <EditText
+        android:id="@+id/login_email"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="email 입력"/>
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="비밀번호 입력"/>
+
+    <Button
+        android:id="@+id/login_signIn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:text="로그인" />
+
+    <Button
+        android:id="@+id/login_signUp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:text="회원가입" />
+
+</LinearLayout>

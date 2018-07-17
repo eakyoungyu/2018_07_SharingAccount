@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private LinearLayoutManager mLayoutMananger;
     private StatementHandlerByBank statementHandlerByBank=new StatementHandlerByBank();
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,11 +38,14 @@ public class MainActivity extends AppCompatActivity {
         }
         registerBroadcast();
 
+
         mAdapter=new RecyclerAdapter();     //여기 인자로 기존 노티 추가
         mRecyclerView=(RecyclerView)findViewById(R.id.recyclerview);
         mLayoutMananger=new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(mLayoutMananger);
         mRecyclerView.setAdapter(mAdapter);
+
+
     }
     private boolean isNotiPermissionAllowed() {
         Set<String> notiListenerSet = NotificationManagerCompat.getEnabledListenerPackages(this);
